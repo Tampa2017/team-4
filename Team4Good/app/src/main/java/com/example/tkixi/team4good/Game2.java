@@ -21,8 +21,8 @@ public class Game2 extends AppCompatActivity implements GestureDetector.OnGestur
     TextView textView4, textView6, score;
     private GestureDetectorCompat GD;
 
-    Player p1 = new Player();
-    Player p2 = new Player();
+    Player p1 = new Player(1);
+    Player p2 = new Player(2);
     Random rand = new Random();
     Player curPlay = p1;
 

@@ -10,12 +10,14 @@ public class Player {
     public int score;
     public int choice;
     public int lives;
+    public int plNum;
 
-    public Player() {
+    public Player(int Num) {
         streak = 1;
         score = 0;
         choice = 0;
         lives = 3;
+        plNum = Num;
     }
 
 

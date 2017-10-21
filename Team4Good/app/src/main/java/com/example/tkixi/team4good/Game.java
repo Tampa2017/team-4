@@ -22,10 +22,10 @@ import java.util.concurrent.TimeUnit;
 public class Game extends AppCompatActivity implements GestureDetector.OnGestureListener{
 
     Button button2, button3, button4, button5, home;
-    TextView textView4, textView6, score;
+    TextView textView4, textView6, score, myNum1;
     private GestureDetectorCompat GD;
 
-    Player p1 = new Player();
+    Player p1 = new Player(1);
     Random rand = new Random();
 
     String[] questions = {"something", "nothing", "hello"};
@@ -47,6 +47,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         textView4 = (TextView) findViewById(R.id.textView4);
         textView6 = (TextView) findViewById(R.id.textView6);
         score = (TextView) findViewById(R.id.score1);
+        myNum1 = (TextView) findViewById(R.id.myNum1);
 
         createButton();
 
