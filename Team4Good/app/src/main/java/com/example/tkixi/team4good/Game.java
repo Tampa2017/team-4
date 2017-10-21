@@ -13,21 +13,22 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import java.util.Collections;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class Game extends AppCompatActivity implements GestureDetector.OnGestureListener{
 
     Button button2, button3, button4, button5, home;
-    TextView textView4, textView6;
+    TextView textView4, textView6, score;
     private GestureDetectorCompat GD;
 
     Player p1 = new Player();
     Random rand = new Random();
 
     String[] questions = {"something", "nothing", "hello"};
-    String[][] answers = {{"ans1", "ans1", "ans1", "ans1"}, {"ans2", "ans2", "ans2", "ans2"}, {"ans1", "ans2", "ans3", "ans4"}};
+    String[][] answers = {{"ansA1", "ansA2", "ansA3", "ansA4"}, {"ansB1", "ansB2", "ansB3", "ansB4"}, {"ansC1", "ansC2", "ansC3", "ansC4"}};
+    String answer;
 
 
     @Override
@@ -42,6 +43,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         home = (Button) findViewById(R.id.home);
         textView4 = (TextView) findViewById(R.id.textView4);
         textView6 = (TextView) findViewById(R.id.textView6);
+        score = (TextView) findViewById(R.id.score);
 
         createButton();
 
@@ -56,12 +58,21 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
 
     private void createButton(){
         int theNum = rand.nextInt(questions.length);
-        button2.setText(answers[theNum][0]);
-        button3.setText(answers[theNum][1]);
-        button4.setText(answers[theNum][2]);
-        button5.setText(answers[theNum][3]);
+        answer = answers[theNum][0];
+        int[] choices = {0,1,2,3};
+        for (int i=0; i<choices.length; i++) {
+            int randomPosition = rand.nextInt(choices.length);
+            int temp = choices[i];
+            choices[i] = choices[randomPosition];
+            choices[randomPosition] = temp;
+        }
+        button2.setText(answers[theNum][choices[0]]);
+        button3.setText(answers[theNum][choices[1]]);
+        button4.setText(answers[theNum][choices[2]]);
+        button5.setText(answers[theNum][choices[3]]);
         textView4.setText(questions[theNum]);
         textView6.setText("" + p1.lives);
+        score.setText(""+0);
     }
 
     @Override
