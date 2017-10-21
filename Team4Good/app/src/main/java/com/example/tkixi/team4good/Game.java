@@ -24,9 +24,9 @@ public class Game {
     private boolean Correct(int Choice) {
         /**Checks the players choice **/
         if (Choice == 0) {
-            return True;
+            return true;
         }
-        return False;
+        return false;
     }
 
     
