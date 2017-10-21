@@ -3,13 +3,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#33CCCC"
     android:weightSum="1">
 
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Avatar"
+        android:gravity="center"/>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="282dp"
         android:layout_height="166dp"
         android:layout_margin="50dp"
+        android:gravity="center"
         app:srcCompat="@drawable/whale" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:textSize="14pt"
+        android:text="Number of Wins: 17" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:textSize="14pt"
+        android:text="Highscore: 12,000" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Badges:"
+        android:textSize="18pt"
+        android:gravity="center"/>
 </LinearLayout>
