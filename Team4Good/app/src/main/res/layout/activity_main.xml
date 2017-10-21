@@ -59,7 +59,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
         android:background="@drawable/border"
-        android:text="HELP THE FISHIES" />
+        android:text="DAILY CHALLENGES" />
 
     <Button
         android:id="@+id/buttonPlay"
