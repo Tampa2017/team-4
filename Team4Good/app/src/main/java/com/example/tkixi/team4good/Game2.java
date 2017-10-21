@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 public class Game2 extends AppCompatActivity implements GestureDetector.OnGestureListener{
 
     Button button2, button3, button4, button5, home;
-    TextView textView4, textView6, score;
+    TextView textView4, textView6, score,  myNum1;
     private GestureDetectorCompat GD;
 
     Player p1 = new Player(1);
@@ -45,6 +45,8 @@ public class Game2 extends AppCompatActivity implements GestureDetector.OnGestur
         textView4 = (TextView) findViewById(R.id.textView4);
         textView6 = (TextView) findViewById(R.id.textView6);
         score = (TextView) findViewById(R.id.score1);
+        myNum1 = (TextView) findViewById(R.id.myNum1);
+        myNum1.setText(""+curPlay.plNum);
 
 
         createButton();
@@ -135,7 +137,7 @@ public class Game2 extends AppCompatActivity implements GestureDetector.OnGestur
             score.setText(""+curPlay.score);
 
         }
-        else if (p1.lives == 0) {
+        else if (p1.lives == 0 && p2.lives > 0) {
             curPlay = p2;
         }
         else {
