@@ -6,8 +6,7 @@ The object of the game is to get the most points as possible (and learn valuable
 The initialization of the app features a landing page where players can sign in and have their data stored.
 The home screen has a news page at the top to constantly provide relevent news to users.
 Beneath the news page is the Spotlight button that will share relevent updates from ODCA's partners.
-
 On the bottom left there will be a button that will direct the user to ODCA's website, so that can learn more about the association.
 On the bottom right will be a link for anyone who would like to donate to ODCA.
-In the very middle is the Play Game button. This will begin the game.
+In the very middle are the to play game types. These will begin the game in either multiplayer or single player.
 Once the player runs out of lives, he is shown his score, and is then given the option to either restart the game or return to the main page.
