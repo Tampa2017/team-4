@@ -18,5 +18,5 @@ public class Player {
         choice = startchoice;
     }
 
-    
+
 }
