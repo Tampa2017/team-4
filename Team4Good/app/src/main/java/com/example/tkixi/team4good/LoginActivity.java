@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         if(savedInstanceState!=null){
             user.setText(savedInstanceState.getString("user"));
             pwd.setText(savedInstanceState.getString("pwd"));
-        }
+  }
         login = (Button) findViewById(R.id.login);
         login.setOnClickListener(new OnClickListener() {
             @Override
