@@ -35,6 +35,12 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Game2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
 
     </application>
 

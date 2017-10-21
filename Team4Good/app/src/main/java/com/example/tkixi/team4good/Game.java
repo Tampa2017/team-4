@@ -140,7 +140,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         }
         else{ //lives = 0
             textView6.setText("0");
-            Toast.makeText(Game.this,"Game Over",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Game.this,"Game Over | Score is: "+ Integer.toString(p1.score),Toast.LENGTH_LONG).show();
         }
 
     }

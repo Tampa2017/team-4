@@ -46,7 +46,6 @@ public class Game2 extends AppCompatActivity implements GestureDetector.OnGestur
         textView6 = (TextView) findViewById(R.id.textView6);
         score = (TextView) findViewById(R.id.score1);
         myNum1 = (TextView) findViewById(R.id.myNum1);
-        myNum1.setText(""+curPlay.plNum);
 
 
         createButton();
@@ -135,14 +134,26 @@ public class Game2 extends AppCompatActivity implements GestureDetector.OnGestur
             textView4.setText(questions[theNum]);
             textView6.setText("" + curPlay.lives);
             score.setText(""+curPlay.score);
+            myNum1.setText(""+curPlay.plNum);
 
         }
         else if (p1.lives == 0 && p2.lives > 0) {
             curPlay = p2;
+            createButton();
         }
-        else {
+        else { // curplay lives == 0
             textView6.setText("0");
-            Toast.makeText(Game2.this,"Game Over",Toast.LENGTH_SHORT).show();
+            if(p1.score > p2.score){
+                Toast.makeText(Game2.this,"Player 1 wins (Player 1 Score: " +
+                        Integer.toString(p1.score) + " || Player 2 Score: " +
+                        Integer.toString(p2.score),Toast.LENGTH_LONG).show();
+            }
+            else{ // player 2 wins
+                Toast.makeText(Game2.this,"Player 2 wins (Player 1 Score: " +
+                        Integer.toString(p1.score) + " || Player 2 Score: " +
+                        Integer.toString(p2.score),Toast.LENGTH_LONG).show();
+            }
+
         }
 
     }
