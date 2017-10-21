@@ -48,6 +48,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         textView6 = (TextView) findViewById(R.id.textView6);
         score = (TextView) findViewById(R.id.score1);
         myNum1 = (TextView) findViewById(R.id.myNum1);
+        myNum1.setText(""+p1.plNum);
 
         createButton();
 
