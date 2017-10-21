@@ -103,5 +103,13 @@
         android:background="@drawable/border"
         android:text="News Here" />
 
+    <ImageView
+        android:id="@+id/fish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button13"
+        android:layout_toStartOf="@+id/button9"
+        app:srcCompat="@drawable/fish" />
+
 
 </RelativeLayout>

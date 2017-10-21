@@ -7,9 +7,11 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     Button buttonSupport, buttonAbout, buttonPlay;
+    ImageView fish;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         buttonSupport = (Button) findViewById(R.id.buttonSupport);
         buttonAbout = (Button) findViewById(R.id.buttonAbout);
         buttonPlay = (Button) findViewById(R.id.buttonPlay);
+        fish = (ImageView) findViewById(R.id.fish);
 
         buttonSupport.setOnClickListener(new View.OnClickListener() {
             @Override
