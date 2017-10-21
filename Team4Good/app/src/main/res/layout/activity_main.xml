@@ -28,22 +28,71 @@
     <Button
         android:id="@+id/button3"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/button4"
         android:layout_alignBottom="@+id/button4"
         android:layout_alignParentEnd="true"
-        android:text="DONATE" />
+        android:layout_marginEnd="19dp"
+        android:layout_weight="1"
+        android:paddingRight="12dp"
+        android:text="Support Us" />
 
     <Button
         android:id="@+id/button4"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageButton"
+        android:layout_marginBottom="37dp"
+        android:layout_weight="1"
+        android:text="Who Are We"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="12dp"
-        android:text="about us" />
+        android:layout_alignStart="@+id/button12" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="Settings"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="14dp"
+        android:text="PLAY"
+        android:layout_above="@+id/button9"
+        android:layout_alignStart="@+id/button9" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Abilities"
+        android:layout_above="@+id/button10"
+        android:layout_alignStart="@+id/button3" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="SPOTLIGHT"
+        android:layout_alignBaseline="@+id/button11"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_alignStart="@+id/imageButton" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="340dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="News Here" />
 
 
 </RelativeLayout>
