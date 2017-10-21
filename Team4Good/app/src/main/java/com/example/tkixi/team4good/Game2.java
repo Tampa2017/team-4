@@ -34,7 +34,7 @@ public class Game2 extends AppCompatActivity implements GestureDetector.OnGestur
     String[][] answers = {{"73,000,000", "7,000,000", "730,000", "73,000"},
             {"Collects information on sharks' movemement","Cause harm to sharks", "None of the answer choices", "Infects waters"},
             {"5+ Million Tons", "3 Million Tons", "None", "Under 1 Million Tons"},
-            {"They all are, Porpoise, Sea Otter, Hawksbill Turtle"},
+            {"They all are", "Porpoise", "Sea Otter", "Hawksbill Turtle"},
             {"Deterioration of the Coral Reef", "More fish", "Cleaner Oceans", "Sustainable sea life populations"}};
     String answer;
 
