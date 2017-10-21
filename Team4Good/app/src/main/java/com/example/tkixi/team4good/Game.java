@@ -6,6 +6,9 @@ package com.example.tkixi.team4good;
 import java.util.Random;
 
 public class Game {
+    private void Game() {
+        this.Counter = 10;
+    }
 
     Random rand = new Random();
     int theNum;
