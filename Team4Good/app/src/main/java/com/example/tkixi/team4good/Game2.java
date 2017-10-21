@@ -17,8 +17,8 @@ import java.util.concurrent.TimeUnit;
 
 public class Game2 extends AppCompatActivity implements GestureDetector.OnGestureListener{
 
-    Button button2, button3, button4, button5, home;
-    TextView textView4, textView6, score,  myNum1;
+    private Button button2, button3, button4, button5, home;
+    private TextView textView4, textView6, score,  myNum1;
     private GestureDetectorCompat GD;
 
     Player p1 = new Player(1);

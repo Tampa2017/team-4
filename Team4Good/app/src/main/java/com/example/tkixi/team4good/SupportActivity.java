@@ -27,8 +27,6 @@ public class SupportActivity extends AppCompatActivity {
 
         mWebView.loadUrl("https://www.paypal.com/donate/?token=O9ZN3nKPxgiArlCOME6KTJkmZR6b5RQn9dfvked_qEQ-8tw0LCzV6YDiyGCcRRRWchAiP0&country.x=US&locale.x=US");
 
-
-
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
