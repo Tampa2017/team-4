@@ -25,7 +25,7 @@ public class SupportActivity extends AppCompatActivity {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        mWebView.loadUrl("https://www.paypal.com/donate/?token=EO0Jon-yD_0P298EVvf4uuIVU55vga-zSc4rfLJxYMACd_S5yubCFzmrEZNFkIYEE8WrUW&country.x=US&locale.x=US");
+        mWebView.loadUrl("https://www.paypal.com/donate/?token=O9ZN3nKPxgiArlCOME6KTJkmZR6b5RQn9dfvked_qEQ-8tw0LCzV6YDiyGCcRRRWchAiP0&country.x=US&locale.x=US");
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override

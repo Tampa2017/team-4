@@ -7,13 +7,11 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-    Button buttonSupport, buttonAbout, buttonPlay, multi, buttonSus, button12;
+    Button buttonSupport, buttonAbout, buttonPlay, multi, buttonSus;
     ImageView fish;
-    ImageButton imageButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +22,6 @@ public class MainActivity extends AppCompatActivity {
         fish = (ImageView) findViewById(R.id.fish);
         multi = (Button) findViewById(R.id.multi);
         buttonSus = (Button) findViewById(R.id.buttonSus);
-        imageButton = (ImageButton) findViewById(R.id.imageButton);
-        button12 = (Button) findViewById(R.id.button12);
 
         buttonSupport.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,20 +56,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ecoActivity.class));
             }
         });
-
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Profile.class));
-            }
-        });
-        button12.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Spotlight.class));
-            }
-        });
-
-
     }
 }
