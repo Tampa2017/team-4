@@ -36,8 +36,8 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
             "What are baby sharks called?",
             "What do you call a group of fish?"};
     String[][] answers = {{"73,000,000", "7,000,000", "730,000", "73,000"},
-            {"Collects information on sharks' movemement","Cause harm to sharks", "None of the answer choices", "Infects waters"},
-            {"5+ Million Tons", "3 Million Tons", "None", "Under 1 Million Tons"},
+            {"Collects information on sharks' movement","Causes harm to sharks", "None of the answer choices", "Infects waters"},
+            {"Over 5 Million Tons", "3 Million Tons", "None", "Under 1 Million Tons"},
             {"They all are, Porpoise, Sea Otter, Hawksbill Turtle"},
             {"Deterioration of the Coral Reef", "More fish", "Cleaner Oceans", "Sustainable sea life populations"},
             {"Pups","Gups","Fry","None of these"},
