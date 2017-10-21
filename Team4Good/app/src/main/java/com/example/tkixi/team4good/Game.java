@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class Game {
     private void Game() {
-        this.Counter = 10;
+        //this.Counter = 10;
     }
 
     Random rand = new Random();
@@ -20,14 +20,20 @@ public class Game {
         int  theNum = rand.nextInt(3) - 1;
         return questions[theNum];
     }
-
     private boolean Correct(int Choice) {
         /**Checks the players choice **/
         if (Choice == 0) {
-            return True;
+            return true;
         }
-        return False;
+        return false;
     }
+//    private boolean Correct(int Choice) {
+//        /**Checks the players choice **/
+//        if (Choice == 0) {
+//            return True;
+//        }
+//        return False;
+//    }
 
     
 
