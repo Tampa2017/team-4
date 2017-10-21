@@ -11,8 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -21,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Game extends AppCompatActivity implements GestureDetector.OnGestureListener{
 
-    Button button2, button3, button4, button5;
+    Button button2, button3, button4, button5, home;
     TextView textView4, textView6;
     private GestureDetectorCompat GD;
 
@@ -29,7 +27,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
     Random rand = new Random();
 
     String[] questions = {"something", "nothing", "hello"};
-    String[][] answers = {{"ans1", "ans2", "ans3", "ans4"}, {"ans1", "ans2", "ans3", "ans4"}, {"ans1", "ans2", "ans3", "ans4"}};
+    String[][] answers = {{"ans1", "ans1", "ans1", "ans1"}, {"ans2", "ans2", "ans2", "ans2"}, {"ans1", "ans2", "ans3", "ans4"}};
 
 
     @Override
@@ -41,15 +39,23 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         button3 = (Button) findViewById(R.id.button3);
         button4 = (Button) findViewById(R.id.button4);
         button5 = (Button) findViewById(R.id.button5);
+        home = (Button) findViewById(R.id.home);
         textView4 = (TextView) findViewById(R.id.textView4);
         textView6 = (TextView) findViewById(R.id.textView6);
 
         createButton();
 
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Game.this, MainActivity.class));
+            }
+        });
+
     }
 
     private void createButton(){
-        int theNum = rand.nextInt(questions.length) - 1;
+        int theNum = rand.nextInt(questions.length);
         button2.setText(answers[theNum][0]);
         button3.setText(answers[theNum][1]);
         button4.setText(answers[theNum][2]);

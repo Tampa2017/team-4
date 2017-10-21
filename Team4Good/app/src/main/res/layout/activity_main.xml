@@ -60,13 +60,13 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/buttonPlay"
         android:layout_width="200dp"
         android:layout_height="125dp"
-        android:text="PLAY"
-        android:layout_gravity="center"
         android:layout_below="@+id/button12"
-        android:layout_toEndOf="@+id/imageButton" />
+        android:layout_gravity="center"
+        android:layout_toEndOf="@+id/imageButton"
+        android:text="PLAY" />
 
     <Button
         android:id="@+id/button11"

@@ -9,14 +9,14 @@ import android.webkit.WebView;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button buttonSupport, buttonAbout;
+    Button buttonSupport, buttonAbout, buttonPlay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         buttonSupport = (Button) findViewById(R.id.buttonSupport);
         buttonAbout = (Button) findViewById(R.id.buttonAbout);
-
+        buttonPlay = (Button) findViewById(R.id.buttonPlay);
 
         buttonSupport.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, AboutActivity.class));
+            }
+        });
+
+        buttonPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Game.class));
             }
         });
     }
