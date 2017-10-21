@@ -15,5 +15,12 @@
             android:text="Score"
             android:layout_alignParentLeft="true"
             android:id="@+id/score_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textSize="20sp"/>
     </RelativeLayout>
 </LinearLayout>
