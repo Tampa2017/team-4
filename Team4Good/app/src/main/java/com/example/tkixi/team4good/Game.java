@@ -74,7 +74,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (button2.getText() == answer) {
+                if (button2.getText().toString().equals(answer)) {
                     p1.score++;
                     createButton();
                 }
@@ -88,7 +88,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (button3.getText() == answer) {
+                if (button3.getText().toString().equals(answer)){
                     p1.score++;
                     createButton();
                 }
@@ -102,7 +102,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (button4.getText() == answer) {
+                if (button4.getText().toString().equals(answer)){
                     p1.score++;
                     createButton();
                 }
@@ -116,7 +116,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (button5.getText() == answer) {
+                if (button5.getText().toString().equals(answer)){
                     p1.score++;
                     createButton();
                 }

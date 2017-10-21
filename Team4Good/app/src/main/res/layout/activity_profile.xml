@@ -7,14 +7,21 @@
     android:weightSum="1">
 
 
-    <EditText
+    <TextView
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Avatar"
         android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:textAlignment="center"
+        android:textSize="24pt"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -24,7 +31,7 @@
         android:gravity="center"
         app:srcCompat="@drawable/whale" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +41,7 @@
         android:textSize="14pt"
         android:text="Number of Wins: 17" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,13 +51,25 @@
         android:textSize="14pt"
         android:text="Highscore: 12,000" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Badges:"
-        android:textSize="18pt"
+        android:textSize="14pt"
         android:gravity="center"/>
+
+    <Button
+        android:id="@+id/goHome"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/finalfish"
+        android:layout_gravity="bottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="sendMessage"
+        android:text="Back"
+        android:textSize="14dp"/>
 </LinearLayout>
