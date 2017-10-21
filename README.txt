@@ -10,4 +10,4 @@ Beneath the news page is the Spotlight button that will share relevent updates f
 On the bottom left there will be a button that will direct the user to ODCA's website, so that can learn more about the association.
 On the bottom right will be a link for anyone who would like to donate to ODCA.
 In the very middle is the Play Game button. This will begin the game.
-Once the player runs out of lives, he is shown his score, and then given the option to either restart the game or return to the main page.
+Once the player runs out of lives, he is shown his score, and is then given the option to either restart the game or return to the main page.
