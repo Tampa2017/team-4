@@ -53,6 +53,12 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Spotlight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
 
     </application>
     <uses-feature android:name="android.hardware.camera"

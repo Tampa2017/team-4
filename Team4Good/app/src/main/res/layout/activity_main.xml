@@ -19,12 +19,15 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:text="GAME NAME" />
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="ORIVIA"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/buttonSupport"
@@ -115,9 +118,10 @@
         android:layout_width="250dp"
         android:layout_height="150dp"
         app:srcCompat="@drawable/shark"
-        android:layout_alignTop="@+id/textView"
+        android:layout_marginEnd="37dp"
+        android:layout_alignTop="@+id/imageButton"
         android:layout_alignEnd="@+id/turtle"
-        android:layout_marginEnd="35dp" />
+        android:layout_marginTop="14dp" />
 
 
 </RelativeLayout>
