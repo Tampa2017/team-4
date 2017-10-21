@@ -13,6 +13,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.Collections;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -31,6 +33,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
     String answer;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -43,9 +46,10 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         home = (Button) findViewById(R.id.home);
         textView4 = (TextView) findViewById(R.id.textView4);
         textView6 = (TextView) findViewById(R.id.textView6);
-        score = (TextView) findViewById(R.id.score);
+        score = (TextView) findViewById(R.id.score1);
 
         createButton();
+
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,9 +67,6 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
                 }
                 else {
                     p1.lives--;
-                    if (p1.lives == 0) {
-
-                    }
                     createButton();
                 }
             }
@@ -116,22 +117,30 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
     }
 
     private void createButton(){
-        int theNum = rand.nextInt(questions.length);
-        answer = answers[theNum][0];
-        int[] choices = {0,1,2,3};
-        for (int i=0; i<choices.length; i++) {
-            int randomPosition = rand.nextInt(choices.length);
-            int temp = choices[i];
-            choices[i] = choices[randomPosition];
-            choices[randomPosition] = temp;
+        if(p1.lives > 0){
+            int theNum = rand.nextInt(questions.length);
+            answer = answers[theNum][0];
+            int[] choices = {0,1,2,3};
+            for (int i=0; i<choices.length; i++) {
+                int randomPosition = rand.nextInt(choices.length);
+                int temp = choices[i];
+                choices[i] = choices[randomPosition];
+                choices[randomPosition] = temp;
+            }
+            button2.setText(answers[theNum][choices[0]]);
+            button3.setText(answers[theNum][choices[1]]);
+            button4.setText(answers[theNum][choices[2]]);
+            button5.setText(answers[theNum][choices[3]]);
+            textView4.setText(questions[theNum]);
+            textView6.setText("" + p1.lives);
+            score.setText(""+p1.score);
+
         }
-        button2.setText(answers[theNum][choices[0]]);
-        button3.setText(answers[theNum][choices[1]]);
-        button4.setText(answers[theNum][choices[2]]);
-        button5.setText(answers[theNum][choices[3]]);
-        textView4.setText(questions[theNum]);
-        textView6.setText("" + p1.lives);
-        score.setText(""+p1.score);
+        else{ //lives = 0
+            textView6.setText("0");
+            Toast.makeText(Game.this,"Game Over",Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     @Override
