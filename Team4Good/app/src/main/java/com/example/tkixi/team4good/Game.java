@@ -24,15 +24,18 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
     Button button2, button3, button4, button5;
     TextView textView4, textView6;
     private GestureDetectorCompat GD;
+
+    Player p1 = new Player();
+    Random rand = new Random();
+
+    String[] questions = {"something", "nothing", "hello"};
+    String[][] answers = {{"ans1", "ans2", "ans3", "ans4"}, {"ans1", "ans2", "ans3", "ans4"}, {"ans1", "ans2", "ans3", "ans4"}};
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-
-        Player p1 = new Player();
-
-        String[] questions = {"something", "nothing", "hello"};
-        String[][] answers = {{"ans1", "ans2", "ans3", "ans4"}, {"ans1", "ans2", "ans3", "ans4"}, {"ans1", "ans2", "ans3", "ans4"}};
 
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
@@ -40,13 +43,19 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         button5 = (Button) findViewById(R.id.button5);
         textView4 = (TextView) findViewById(R.id.textView4);
         textView6 = (TextView) findViewById(R.id.textView6);
-        button2.setText(answers[0][0]);
-        button3.setText(answers[0][1]);
-        button4.setText(answers[0][2]);
-        button5.setText(answers[0][3]);
-        textView4.setText(questions[0]);
-        textView6.setText(""+p1.lives);
 
+        createButton();
+
+    }
+
+    private void createButton(){
+        int theNum = rand.nextInt(questions.length) - 1;
+        button2.setText(answers[theNum][0]);
+        button3.setText(answers[theNum][1]);
+        button4.setText(answers[theNum][2]);
+        button5.setText(answers[theNum][3]);
+        textView4.setText(questions[theNum]);
+        textView6.setText("" + p1.lives);
     }
 
     @Override
