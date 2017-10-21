@@ -33,8 +33,6 @@ public class Game extends AppCompatActivity {
         button2.setText("hello");
 
 
-
-
     }
     private void Game() {
         //this.Counter = 10;
