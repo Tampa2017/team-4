@@ -31,7 +31,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:hint="Question goes here!"
-        android:textSize="17dp"
+        android:textSize="17dp" />
 
     <Button
         android:id="@+id/button2"
