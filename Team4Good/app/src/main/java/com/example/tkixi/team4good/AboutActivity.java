@@ -30,6 +30,7 @@ public class AboutActivity extends AppCompatActivity {
         mWebView.loadUrl("https://www.oceansdaughterconservation.com");
 
 
+
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
