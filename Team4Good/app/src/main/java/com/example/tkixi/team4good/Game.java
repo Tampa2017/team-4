@@ -41,7 +41,6 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
     String answer;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
