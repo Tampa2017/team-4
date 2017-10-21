@@ -52,20 +52,20 @@
         android:layout_alignStart="@+id/imageButton" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/buttonSus"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/border"
-        android:text="Settings"
         android:layout_above="@+id/buttonSupport"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/border"
+        android:text="HELP THE FISHIES" />
 
     <Button
         android:id="@+id/buttonPlay"
         android:layout_width="200dp"
         android:layout_height="125dp"
-        android:layout_above="@+id/button9"
+        android:layout_above="@+id/buttonSus"
         android:layout_gravity="center"
         android:layout_marginBottom="12dp"
         android:layout_marginStart="15dp"
