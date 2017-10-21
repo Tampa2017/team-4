@@ -29,9 +29,10 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
+        Player p1 = new Player();
+
         String[] questions = {"something", "nothing", "hello"};
         String[][] answers = {{"ans1", "ans2", "ans3", "ans4"}, {"ans1", "ans2", "ans3", "ans4"}, {"ans1", "ans2", "ans3", "ans4"}};
-        double timer = 10.00;
 
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
@@ -44,24 +45,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         button4.setText(answers[0][2]);
         button5.setText(answers[0][3]);
         textView4.setText(questions[0]);
-        String t = ""+timer;
-        textView6.setText(t);
-
-        while (timer>0.01){
-            try
-            {
-                Thread.sleep(10);
-                timer -= .01;
-                t = ""+timer;
-                textView6.setText(t);
-            }
-            catch(InterruptedException ex)
-            {
-                Thread.currentThread().interrupt();
-            }
-
-        }
-
+        textView6.setText(""+p1.lives);
 
     }
 
@@ -70,6 +54,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         this.GD.onTouchEvent(event);
         return super.onTouchEvent(event);
     }
+
 
 //    @Override
     public boolean onSingleTapConfirmed(MotionEvent e) {

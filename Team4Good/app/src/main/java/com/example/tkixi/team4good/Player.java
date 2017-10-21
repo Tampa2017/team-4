@@ -9,11 +9,13 @@ public class Player {
     public int streak;
     public int score;
     public int choice;
+    public int lives;
 
     public Player() {
         streak = 0;
         score = 0;
         choice = 0;
+        lives = 3;
     }
 
 
