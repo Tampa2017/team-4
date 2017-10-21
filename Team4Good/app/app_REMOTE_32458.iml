@@ -81,10 +81,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
-<<<<<<< HEAD
-=======
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
->>>>>>> f8d7135b581658f32c9b74985c4878f6e96414b5
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 26 Platform" jdkType="Android SDK" />
