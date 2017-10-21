@@ -28,8 +28,16 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
     Player p1 = new Player(1);
     Random rand = new Random();
 
-    String[] questions = {"something", "nothing", "hello"};
-    String[][] answers = {{"ansA1", "ansA2", "ansA3", "ansA4"}, {"ansB1", "ansB2", "ansB3", "ansB4"}, {"ansC1", "ansC2", "ansC3", "ansC4"}};
+    String[] questions = {"Approximately how many shark will be killed this year?",
+            "Which of the following is true about shark tagging?",
+            "How much plastic goes into the ocean each year?",
+            "Which of these sea animals is endangered?",
+            "Which of the following is an adverse effect of destructive fishing practices?"};
+    String[][] answers = {{"73,000,000", "7,000,000", "730,000", "73,000"},
+            {"Collects information on sharks' movemement","Cause harm to sharks", "None of the answer choices", "Infects waters"},
+            {"5+ Million Tons", "3 Million Tons", "None", "Under 1 Million Tons"},
+            {"They all are, Porpoise, Sea Otter, Hawksbill Turtle"},
+            {"Deterioration of the Coral Reef", "More fish", "Cleaner Oceans", "Sustainable sea life populations"}};
     String answer;
 
 
