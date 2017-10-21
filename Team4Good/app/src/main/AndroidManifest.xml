@@ -17,11 +17,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".AboutActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
+        <!--<activity android:name=".AboutActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
 
 
     </application>
