@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#33CCCC"
+    android:background="@drawable/beach"
     tools:context="com.example.tkixi.team4good.MainActivity">
 
     <ImageButton
@@ -18,48 +18,41 @@
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:text="USER" />
-
-    <TextView
         android:id="@+id/textRecycle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="98dp"
+        android:layout_marginTop="116dp"
         android:text="Recycle!"
+        android:textSize="16dp"
         android:layout_below="@+id/imageButton"
-        android:layout_alignStart="@+id/imageButton" />
+        android:layout_toStartOf="@+id/textTotal" />
 
     <TextView
         android:id="@+id/textPack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="87dp"
+        android:textSize="16dp"
         android:text="Pack your lunch in a reusable bag"
-        android:layout_below="@+id/check5"
-        android:layout_alignStart="@+id/imageButton"
-        android:layout_marginStart="14dp" />
+        android:layout_below="@+id/textRecycle"
+        android:layout_alignStart="@+id/imageButton" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="DAILY CHALLENGES"
-        android:layout_below="@+id/imageButton"
+        android:textSize="26dp"
+        android:layout_above="@+id/check5"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp" />
+        android:layout_marginBottom="28dp" />
 
     <TextView
         android:id="@+id/textRefer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="82dp"
+        android:textSize="16dp"
         android:text="Tell a friend about this app"
         android:layout_below="@+id/textPack"
         android:layout_alignStart="@+id/textPack" />
@@ -68,38 +61,51 @@
         android:id="@+id/check5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
+        android:textSize="16dp"
         android:text="+5 Points"
         android:layout_alignBaseline="@+id/textRecycle"
         android:layout_alignBottom="@+id/textRecycle"
-        android:layout_toEndOf="@+id/textView12" />
+        android:layout_alignStart="@+id/check3" />
 
     <CheckBox
         android:id="@+id/check3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="+3 Points"
-        android:layout_alignBaseline="@+id/textPack"
+        android:textSize="16dp"
         android:layout_alignBottom="@+id/textPack"
-        android:layout_alignStart="@+id/check5" />
+        android:layout_toEndOf="@+id/textTotal" />
 
     <CheckBox
         android:id="@+id/check1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textRefer"
+        android:textSize="16dp"
+        android:text="+1 Point"
         android:layout_alignBottom="@+id/textRefer"
-        android:layout_alignStart="@+id/check3"
-        android:text="+1 Point" />
+        android:layout_alignStart="@+id/check3" />
 
     <TextView
         android:id="@+id/textTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/check1"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="76dp"
         android:text="Total Points: " />
 
+    <Button
+        android:id="@+id/home"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/finalfish"
+        android:onClick="sendMessage"
+        android:text="Back"
+        android:textSize="14dp" />
 
 </RelativeLayout>

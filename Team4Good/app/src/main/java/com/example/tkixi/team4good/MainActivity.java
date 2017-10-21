@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-    Button buttonSupport, buttonAbout, buttonPlay, multi;
+    Button buttonSupport, buttonAbout, buttonPlay, multi, buttonSus;
     ImageView fish;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         buttonPlay = (Button) findViewById(R.id.buttonPlay);
         fish = (ImageView) findViewById(R.id.fish);
         multi = (Button) findViewById(R.id.multi);
+        buttonSus = (Button) findViewById(R.id.buttonSus);
 
         buttonSupport.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, Game2.class));
+            }
+        });
+
+        buttonSus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ecoActivity.class));
             }
         });
     }
