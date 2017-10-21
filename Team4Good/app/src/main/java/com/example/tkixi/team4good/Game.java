@@ -54,6 +54,62 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
             }
         });
 
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (button2.getText() == answer) {
+                    p1.score++;
+                    createButton();
+                }
+                else {
+                    p1.lives--;
+                    createButton();
+                }
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (button3.getText() == answer) {
+                    p1.score++;
+                    createButton();
+                }
+                else {
+                    p1.lives--;
+                    createButton();
+                }
+            }
+        });
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (button4.getText() == answer) {
+                    p1.score++;
+                    createButton();
+                }
+                else {
+                    p1.lives--;
+                    createButton();
+                }
+            }
+        });
+
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (button5.getText() == answer) {
+                    p1.score++;
+                    createButton();
+                }
+                else {
+                    p1.lives--;
+                    createButton();
+                }
+            }
+        });
+
     }
 
     private void createButton(){
@@ -72,7 +128,7 @@ public class Game extends AppCompatActivity implements GestureDetector.OnGesture
         button5.setText(answers[theNum][choices[3]]);
         textView4.setText(questions[theNum]);
         textView6.setText("" + p1.lives);
-        score.setText(""+0);
+        score.setText(""+p1.score);
     }
 
     @Override

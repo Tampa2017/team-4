@@ -12,7 +12,7 @@ public class Player {
     public int lives;
 
     public Player() {
-        streak = 0;
+        streak = 1;
         score = 0;
         choice = 0;
         lives = 3;
